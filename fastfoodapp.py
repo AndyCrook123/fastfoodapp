@@ -5,6 +5,7 @@ from flask_login import login_required, current_user, login_user, logout_user
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///userdata.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'thisisasecretkey'
 
 db.init_app(app)
 login.init_app(app)
@@ -67,7 +68,7 @@ def signup():
         username = request.form['username']
         password = request.form['password']
  
-        if UserModel.query.filter_by(email=email):
+        if UserModel.query.filter_by(email=email).first():
             return ('Email already Present')
              
         user = UserModel(email=email, username=username)

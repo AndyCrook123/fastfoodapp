@@ -1,34 +1,8 @@
 body{
-	max-width:800px;
-	margin:40px auto;
+	max-width:650px;
+	margin:40px auto:
 	padding:10px;
 	font:18px;
-	color:#444;
-}
-
-h1,h2,h3{line-height:1.2}
-
-ul {
-  	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  	background-color: #333;
-}
-
-li {
-  	float:left;
-	border-right: 1px solid #bbb;
-}
-
-li a {
-	display: block;
-  	color: white;
-  	padding: 28px 22px;
-  	text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  	background-color: #111;
-}
+	color:#444
+	}
+h1,h2,h3{line-height:1.2}	

@@ -5,8 +5,10 @@
 </head>
 
 <body>
-        <h1>Fast Food</h1>
-        <nav>
+       	{% block content %}
+	<h1>Fast Food</h1>
+       	{% endblock %}
+	<nav>
                 <ul>
 			<li>
 				<a href="/">Homepage</a>
@@ -37,6 +39,8 @@
 			</li>
                 </ul>
         </nav>
+	{% block maincontent %}
+	{% endblock %}
 </body>
 
 </html>

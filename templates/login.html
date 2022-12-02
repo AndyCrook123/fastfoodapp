@@ -3,45 +3,19 @@
 <head>
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
 </head>
-
-<body>
+{% extends "homepage.html" %}
+<body>	
+	{% block content %}
         <h1>Log In</h1>
-        <nav>
-                <ul>
-			<li>
-				<A href="/">Homepage</a>
-			</li>
-                        <li>
-                                <a href="favourites.html">Favourites</a>
-                        </li>
-                        <li>
-                                <a href="burgers.html">Burgers</a>
-                        </li>
-                        <li>
-                                <a href="italian.html">Italian</a>
-                        </li>
-                        <li>
-                                <a href="chinese.html">Chinese</a>
-                        </li>
-                        <li>
-                                <a href="indian.html">Indian</a>
-                        </li>
-                        <li>
-                                <a href="contactus.html">Contact Us</a>
-                        </li>
-                        <li>
-                                <a href="login.html">Log In</a>
-                        </li>
-			<li>
-				<a href="signup.html">Sign Up</a>
-			</li>
-                </ul>
-        </nav>
+	{% endblock %}
+
+	{% block maincontent %}
 	<form action="" method = "POST">
 		<p>email <input type = "email" name = "email" /></p>
     		<p>password <input type = "password" name = "password" /></p>
     		<p> submit <input type = "submit" value = "Submit" /></p>
 	</form>
+	{% endblock %}
 </body>
 
 </html>

@@ -1,33 +1,44 @@
+*{
+	background-color: #ff9999;
+	font-family: Courier;
+	}
+
 body{
+	text-align:center;
 	max-width:1000px;
 	margin:120px auto;
 	padding:10px;
 	font:18px;
 	color:#444;
 	}
+
 h1,h2,h3{line-height:1.2}
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+ 
+  	list-style-type: none;
+  	margin: 15px;
+  	padding: 15px;
+  	
 }
 
 li {
-  float: left;
+  	float: left;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 28px 26px;
+  padding: 28px 10px;
   text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+}
+
+dd,dt,p{
+	padding-top:50px;
 }
